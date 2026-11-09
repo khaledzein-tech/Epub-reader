@@ -10,7 +10,7 @@ import {
 type Theme = 'dark' | 'light' | 'sepia';
 type Mark = { id: string; cfi: string; label: string; note?: string; color?: string; quote?: string; };
 const STORAGE = 'reader-astorat-frame-v1';
-const bookUrl = `${import.meta.env.BASE_URL}books/book.epub`;
+const bookUrl = '/Epub-reader/books/book.epub';
 function readSaved() {
   try { return JSON.parse(localStorage.getItem(STORAGE) || '{}'); } catch { return {}; }
 }
